@@ -25,6 +25,7 @@ public class AServiceApplication {
 
 		Person p = restTemplate.getForObject(url, Person.class);
 
+		System.out.println("Name " + id + " :" + p.getName());
 		System.out.println("Id " + id + " :" + p.getName());
 		return p;
 	}
